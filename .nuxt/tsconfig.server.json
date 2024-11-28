@@ -105,7 +105,10 @@
         "../node_modules/@nuxtjs/sitemap/dist/runtime/types"
       ],
       "#mail": [
-        "./file:/Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/.nuxt/nuxt-mail"
+        "./nuxt-mail"
+      ],
+      "#mail/*": [
+        "./nuxt-mail/*"
       ],
       "#vue-router": [
         "./vue-router"

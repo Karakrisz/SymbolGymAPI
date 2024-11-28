@@ -105,7 +105,7 @@ const _inlineRuntimeConfig = {
         "headers": {
           "Content-Type": "text/xml; charset=UTF-8",
           "Cache-Control": "public, max-age=600, must-revalidate",
-          "X-Sitemap-Prerendered": "2024-11-18T12:31:40.139Z"
+          "X-Sitemap-Prerendered": "2024-11-28T18:11:36.368Z"
         }
       },
       "/_nuxt/builds/meta/**": {
@@ -735,7 +735,7 @@ const _7T2UjKb1DO = (function(nitro) {
 
 const rootDir = "/Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Orosházán edzések modern eszközökkel és tapasztalt edzőkkel. Építsd fel a legjobb önmagad a Symbol Gym-ben!"},{"name":"format-detection","content":"telephone=no"},{"hid":"robots","name":"robots","content":"index, follow"},{"http-equiv":"Content-Security-Policy","content":"\n            default-src 'self' https: data:;\n            img-src 'self' https: http: data:;\n            font-src 'self' https: data:;\n            style-src 'self' https: 'unsafe-inline';\n            script-src 'self' https: 'unsafe-inline' 'unsafe-eval';\n            connect-src 'self' https: http: https://www.symbolgym.com/blogapi/public;\n          "}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"canonical","href":"https://www.symbolgym.info"},{"rel":"preconnect","href":"https://fonts.gstatic.com"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"hu"}};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Orosházán edzések modern eszközökkel és tapasztalt edzőkkel. Építsd fel a legjobb önmagad a Symbol Gym-ben!"},{"name":"format-detection","content":"telephone=no"},{"hid":"robots","name":"robots","content":"index, follow"},{"http-equiv":"Content-Security-Policy","content":"\n            default-src 'self' https: data:;\n            img-src 'self' https: http: data:;\n            font-src 'self' https: data:;\n            style-src 'self' https: 'unsafe-inline';\n            script-src 'self' https: 'unsafe-inline' 'unsafe-eval';\n            connect-src 'self' https: http: https://www.symbolgym.com/blogapi/public;\n          "}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"canonical","href":"https://www.symbolgym.info"},{"rel":"preconnect","href":"https://fonts.gstatic.com"}],"style":[],"script":[{"hid":"clarity","type":"text/javascript","children":"\n          (function(c,l,a,r,i,t,y){\n            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n            t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n          })(window, document, \"clarity\", \"script\", \"p5q225fx94\");\n          "}],"noscript":[],"htmlAttrs":{"lang":"hu"}};
 
 const appRootTag = "div";
 
@@ -2485,6 +2485,9 @@ const sources$1 = [
                 "loc": "/mobilizacio"
             },
             {
+                "loc": "/posts"
+            },
+            {
                 "loc": "/rolunk"
             },
             {
@@ -2528,7 +2531,8 @@ const sitemap = defineSitemapEventHandler(async (e) => {
     return posts.map((post) => {
       return {
         loc: `/posts/${post.slug}`,
-        lastmod: post.modifiedAt ? new Date(post.modifiedAt) : /* @__PURE__ */ new Date()
+        // Használjuk a modifiedAt-et, vagy fallback a created_at mezőre
+        lastmod: post.modifiedAt ? new Date(post.modifiedAt).toISOString() : new Date(post.created_at).toISOString()
       };
     });
   } catch (error) {

@@ -190,7 +190,7 @@
           >
             <PhosphorIconSpinner class="w-8 h-8 text-white animate-spin" />
           </div>
-          <NuxtImg
+          <img
             v-if="currentImage"
             :src="currentImage.src"
             :alt="currentImage.alt"

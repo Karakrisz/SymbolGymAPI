@@ -113,7 +113,7 @@ const sendEmail = async () => {
           <div class="w-full mb-6">
             <input
               type="number"
-              placeholder="EDZÉSEK SZÁMA HETENTE"
+              placeholder="MIBEN SEGÍTHETEK ?"
               id="subject"
               v-model="form.subject"
               required

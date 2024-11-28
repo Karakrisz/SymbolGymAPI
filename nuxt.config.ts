@@ -97,6 +97,19 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap',
         },
       ],
+      script: [
+        {
+          hid: 'clarity',
+          type: 'text/javascript',
+          children: `
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "p5q225fx94");
+          `,
+        },
+      ],
     },
   },
 

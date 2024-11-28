@@ -66,13 +66,19 @@
         Szolgáltatásaink
       </h2>
       <p class="max-w-3xl pb-10 text-sm text-right">
-        A Symbol Gym érzés többről szól, mint egyszerű edzésről. Itt egy
-        közösség része lehetsz, ahol a családias hangulat és a támogató társaság
-        minden alkalommal motivál. A Symbol Gym-ben együtt dolgozunk, együtt
-        fejlődünk, és együtt érjük el a céljainkat. Ez az érzés a közös
-        küzdelmekből, a megosztott sikerekből és a folyamatos támogatásból
-        fakad. Nálunk nem csak erősebbé válsz, hanem igazi közösségre találsz,
-        amely minden lépésedet támogatja az úton.
+        A Symbol Gym egyedülálló élményt kínál: itt nem csupán a testedet
+        formálhatod, hanem egy olyan támogató közösség részévé válhatsz, amely
+        mindig melletted áll. Célunk, hogy a mozgás ne csak egy kötelezettség
+        legyen, hanem egy élmény, amelyet szívesen élsz át újra és újra. Nálunk
+        a családias hangulat és az egymás iránti bizalom teremti meg azt a
+        légkört, amelyben mindenki fejlődhet. Az edzések során nemcsak izmaidat
+        erősítjük, hanem barátságokat építünk, és közös sikereket érünk el.
+        Hiszünk abban, hogy a közös célokért való küzdelem és az egymás iránti
+        támogatás sokkal többet ad, mint amit bármelyik edzőterem nyújtani tud.
+        A Symbol Gym-ben minden lépésed számít. Akár a kezdő lépéseknél tartasz,
+        akár a következő nagy kihívásodra készülsz, mi itt vagyunk, hogy
+        segítsünk. Csatlakozz hozzánk, és éld át, milyen érzés, amikor egy
+        közösség veled együtt halad az úton, mindig a legjobbat kihozva belőled!
       </p>
       <div
         class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"

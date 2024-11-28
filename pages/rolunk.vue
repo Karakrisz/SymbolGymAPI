@@ -7,13 +7,24 @@
         MIRŐL SZÓL A SYMBOL GYM ÉRZÉS?
       </h2>
       <p class="max-w-3xl pb-10 text-sm">
-        A Symbol Gym érzés többről szól, mint egyszerű edzésről. Itt egy
-        közösség része lehetsz, ahol a családias hangulat és a támogató társaság
-        minden alkalommal motivál. A Symbol Gym-ben együtt dolgozunk, együtt
-        fejlődünk, és együtt érjük el a céljainkat. Ez az érzés a közös
-        küzdelmekből, a megosztott sikerekből és a folyamatos támogatásból
-        fakad. Nálunk nem csak erősebbé válsz, hanem igazi közösségre találsz,
-        amely minden lépésedet támogatja az úton.
+        A Symbol Gym egy különleges hely, ahol a tested és a lelked is erőre
+        kap. Itt nem csupán az edzőterembe jársz – egy támogató és inspiráló
+        közösség részévé válsz, ahol az egyéni céljaid elérése mellett közös
+        sikerekben is osztozhatsz. Az edzések során olyan légkört teremtünk,
+        ahol mindenki a saját határait feszegetheti, miközben egymást
+        ösztönözzük és támogatjuk. Nálunk a fejlődés nemcsak az izmokról szól:
+        megtanulod leküzdeni a nehézségeket, új szintekre lépsz, és
+        magabiztosságot építesz.
+      </p>
+      <p class="max-w-3xl pb-10 text-sm">
+        A Symbol Gym-ben elkötelezettek vagyunk amellett, hogy minden egyes
+        vendégünk a lehető legtöbbet hozza ki magából – legyen szó kezdőkről
+        vagy tapasztalt sportolókról. Edzőink nem csupán szakértelmükkel
+        segítenek, hanem melletted állnak a kihívások során, és megünneplik
+        veled minden apró győzelmedet. Ez a hely nem csupán egy edzőterem; egy
+        otthon, ahol fejlődés, küzdelem és közös tapasztalatok teszik gazdagabbá
+        a mindennapokat. Lépj be hozzánk, és éld át, hogyan válhat a sportolás
+        igazi élettapasztalattá – együtt, közösségben, határokat nem ismerve.
       </p>
       <NuxtImg
         src="/img/team.webp"

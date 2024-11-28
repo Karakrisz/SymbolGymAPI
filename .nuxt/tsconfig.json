@@ -2,6 +2,9 @@
 {
   "compilerOptions": {
     "paths": {
+      "nitropack/types": [
+        "../node_modules/nitropack/types"
+      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -62,6 +65,9 @@
       "@@/*": [
         "../*"
       ],
+      "#shared": [
+        "../shared"
+      ],
       "assets": [
         "../assets"
       ],
@@ -73,6 +79,12 @@
       ],
       "public/*": [
         "../public/*"
+      ],
+      "#build": [
+        "."
+      ],
+      "#build/*": [
+        "./*"
       ],
       "#app": [
         "../node_modules/nuxt/dist/app"
@@ -95,6 +107,12 @@
       "#mail": [
         "file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/.nuxt/nuxt-mail"
       ],
+      "#robots": [
+        "../node_modules/@nuxtjs/robots/dist/runtime"
+      ],
+      "#robots/*": [
+        "../node_modules/@nuxtjs/robots/dist/runtime/*"
+      ],
       "#vue-router": [
         "../node_modules/vue-router"
       ],
@@ -103,12 +121,6 @@
       ],
       "#app-manifest": [
         "./manifest/meta/dev.json"
-      ],
-      "#build": [
-        "."
-      ],
-      "#build/*": [
-        "./*"
       ],
       "#components": [
         "./components"
@@ -126,7 +138,7 @@
     "noUncheckedIndexedAccess": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
-    "module": "ESNext",
+    "module": "preserve",
     "noEmit": true,
     "lib": [
       "ESNext",
@@ -158,6 +170,8 @@
     "../node_modules/nuxt-mail/dist/runtime",
     "../node_modules/@nuxtjs/google-fonts/runtime",
     "../node_modules/@nuxtjs/google-fonts/dist/runtime",
+    "../node_modules/@nuxtjs/robots/runtime",
+    "../node_modules/@nuxtjs/robots/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
@@ -181,6 +195,8 @@
     "../node_modules/nuxt-mail/dist/runtime/server",
     "../node_modules/@nuxtjs/google-fonts/runtime/server",
     "../node_modules/@nuxtjs/google-fonts/dist/runtime/server",
+    "../node_modules/@nuxtjs/robots/runtime/server",
+    "../node_modules/@nuxtjs/robots/dist/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",

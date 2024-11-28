@@ -1,9 +1,9 @@
 const interopDefault = r => r.default || r || [];
 const styles = {
-  "node_modules/nuxt/dist/app/entry.js": () => import('./entry-styles.DO7oC8ve.mjs').then(interopDefault),
-  "pages/galeria.vue": () => import('./galeria-styles.COu0vLKM.mjs').then(interopDefault),
+  "node_modules/nuxt/dist/app/entry.js": () => import('./entry-styles.6XxmLJiT.mjs').then(interopDefault),
   "components/ui/DisclosureItem.vue": () => import('./DisclosureItem-styles.DAOpZ_XJ.mjs').then(interopDefault),
   "components/ui/DisclosureItem.vue?vue&type=style&index=0&scoped=abe75901&lang.css": () => import('./DisclosureItem-styles.DN7Ojv91.mjs').then(interopDefault),
+  "pages/galeria.vue": () => import('./galeria-styles.COu0vLKM.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-404.vue": () => import('./error-404-styles.BcoFjqgl.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-500.vue": () => import('./error-500-styles.DPP87-Dp.mjs').then(interopDefault),
   "pages/galeria.vue?vue&type=style&index=0&lang.css": () => import('./galeria-styles.D6Rfzw1k.mjs').then(interopDefault),

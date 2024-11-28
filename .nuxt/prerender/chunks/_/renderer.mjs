@@ -1,59 +1,34 @@
 import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/h3/dist/index.mjs';
+import { getQuery, createError, appendResponseHeader, getResponseStatus, getResponseStatusText } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/h3/dist/index.mjs';
 import { stringify, uneval } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/devalue/index.js';
-import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/ufo/dist/index.mjs';
+import { joinURL, withoutTrailingSlash } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/vue/server-renderer/index.mjs';
 import { propsToString, renderSSRHead } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/@unhead/ssr/dist/index.mjs';
-import { u as useRuntimeConfig, a as useNitroApp, b as useStorage, g as getRouteRules } from '../runtime.mjs';
+import { a as defineRenderHandler, b as buildAssetsURL, p as publicAssetsURL, u as useStorage, g as getRouteRules, c as useRuntimeConfig, e as useNitroApp } from '../nitro/nitro.mjs';
 import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unhead/dist/index.mjs';
 import { version, unref } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/vue/index.mjs';
 import { defineHeadPlugin } from 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/@unhead/shared/dist/index.mjs';
-
-function defineRenderHandler(handler) {
-  const runtimeConfig = useRuntimeConfig();
-  return eventHandler(async (event) => {
-    if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
-      setResponseHeader(event, "Content-Type", "image/x-icon");
-      return send(
-        event,
-        "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-      );
-    }
-    const response = await handler(event);
-    if (!response) {
-      const _currentStatus = getResponseStatus(event);
-      setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
-      return send(
-        event,
-        "No response returned from render handler: " + event.path
-      );
-    }
-    const nitroApp = useNitroApp();
-    await nitroApp.hooks.callHook("render:response", response, { event });
-    if (response.headers) {
-      setResponseHeaders(event, response.headers);
-    }
-    if (response.statusCode || response.statusMessage) {
-      setResponseStatus(event, response.statusCode, response.statusMessage);
-    }
-    return response.body;
-  });
-}
-
-function baseURL() {
-  return useRuntimeConfig().app.baseURL;
-}
-function buildAssetsDir() {
-  return useRuntimeConfig().app.buildAssetsDir;
-}
-function buildAssetsURL(...path) {
-  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
-}
-function publicAssetsURL(...path) {
-  const app = useRuntimeConfig().app;
-  const publicBase = app.cdnURL || app.baseURL;
-  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
-}
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/destr/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/hookable/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/ofetch/dist/node.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/klona/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/defu/dist/defu.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/scule/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unstorage/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/radix3/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unctx/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/unenv/runtime/npm/consola.mjs';
+import 'node:fs';
+import 'node:url';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/pathe/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/nodemailer/lib/nodemailer.js';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/@dword-design/functions/dist/index.js';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/ipx/dist/index.mjs';
+import 'file:///Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/node_modules/ohash/dist/index.mjs';
 
 const Vue3 = version[0] === "3";
 
@@ -298,10 +273,9 @@ const renderer = defineRenderHandler(async (event) => {
   }
   {
     const link = [];
-    for (const style in styles) {
-      const resource = styles[style];
+    for (const resource of Object.values(styles)) {
       {
-        link.push({ rel: "stylesheet", href: renderer.rendererContext.buildAssetsURL(resource.file) });
+        link.push({ rel: "stylesheet", href: renderer.rendererContext.buildAssetsURL(resource.file), crossorigin: "" });
       }
     }
     if (link.length) {
@@ -393,7 +367,7 @@ async function renderInlineStyles(usedModules) {
   const styleMap = await getSSRStyles();
   const inlinedStyles = /* @__PURE__ */ new Set();
   for (const mod of usedModules) {
-    if (mod in styleMap) {
+    if (mod in styleMap && styleMap[mod]) {
       for (const style of await styleMap[mod]()) {
         inlinedStyles.add(style);
       }
@@ -442,10 +416,5 @@ function splitPayload(ssrContext) {
   };
 }
 
-const renderer$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: renderer
-});
-
-export { buildAssetsURL as a, baseURL as b, renderer$1 as r };
+export { renderer as default };
 //# sourceMappingURL=renderer.mjs.map

@@ -27,38 +27,31 @@ export default defineNuxtConfig({
       global: true,
     },
   ],
-  modules: [
-    '@nuxt/image',
-    '@nuxtjs/sitemap',
-    'nuxt-phosphor-icons',
-    [
-      'nuxt-mail',
-      {
-        message: {
-          to: 'web@symbolgym.info',
-        },
-        smtp: {
-          host: 's56.tarhely.com',
-          port: 587,
-          auth: {
-            user: 'web@symbolgym.info',
-            pass: '#+SpM_HR~QCy',
-          },
-        },
-      },
-    ],
+  modules: ['@nuxt/image', '@nuxtjs/sitemap', 'nuxt-phosphor-icons', [
     'nuxt-mail',
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-          Montserrat: true,
-          Teko: true,
-          'Big Shoulders Display': '200..900',
+    {
+      message: {
+        to: 'web@symbolgym.info',
+      },
+      smtp: {
+        host: 's56.tarhely.com',
+        port: 587,
+        auth: {
+          user: 'web@symbolgym.info',
+          pass: '#+SpM_HR~QCy',
         },
       },
-    ],
-  ],
+    },
+  ], 'nuxt-mail', [
+    '@nuxtjs/google-fonts',
+    {
+      families: {
+        Montserrat: true,
+        Teko: true,
+        'Big Shoulders Display': '200..900',
+      },
+    },
+  ], '@nuxtjs/robots'],
   app: {
     head: {
       htmlAttrs: {

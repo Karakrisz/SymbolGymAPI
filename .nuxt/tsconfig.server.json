@@ -32,6 +32,9 @@
         "../*",
         "../*"
       ],
+      "nitropack/types": [
+        "../node_modules/nitropack/types"
+      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -68,9 +71,6 @@
       "nuxt": [
         "../node_modules/nuxt"
       ],
-      "#internal/nuxt/paths": [
-        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
-      ],
       "~": [
         "./.."
       ],
@@ -83,6 +83,9 @@
       "@@": [
         "./.."
       ],
+      "#shared": [
+        "../shared"
+      ],
       "assets": [
         "../assets"
       ],
@@ -94,6 +97,15 @@
       ],
       "public/*": [
         "../public/*"
+      ],
+      "#build": [
+        "./"
+      ],
+      "#build/*": [
+        "./*"
+      ],
+      "#internal/nuxt/paths": [
+        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "#image": [
         "../node_modules/@nuxt/image/dist/runtime"
@@ -110,14 +122,35 @@
       "#mail/*": [
         "./nuxt-mail/*"
       ],
+      "#robots": [
+        "../node_modules/@nuxtjs/robots/dist/runtime"
+      ],
+      "#robots/*": [
+        "../node_modules/@nuxtjs/robots/dist/runtime/*"
+      ],
       "#vue-router": [
         "./vue-router"
       ],
-      "#internal/nuxt-site-config": [
-        "../node_modules/nuxt-site-config/dist/runtime/nitro/composables"
+      "#site-config": [
+        "../node_modules/nuxt-site-config/dist/runtime"
       ],
-      "#internal/nuxt-site-config/*": [
-        "../node_modules/nuxt-site-config/dist/runtime/nitro/composables/*"
+      "#site-config/*": [
+        "../node_modules/nuxt-site-config/dist/runtime/*"
+      ],
+      "#internal/nuxt-site-config": [
+        "../node_modules/nuxt-site-config/dist/runtime/server/composable-barrel-deprecated"
+      ],
+      "#internal/nuxt-simple-robots": [
+        "../node_modules/@nuxtjs/robots/dist/runtime/server/composables"
+      ],
+      "#internal/nuxt-simple-robots/*": [
+        "../node_modules/@nuxtjs/robots/dist/runtime/server/composables/*"
+      ],
+      "#internal/nuxt-robots": [
+        "../node_modules/@nuxtjs/robots/dist/runtime/server/composables"
+      ],
+      "#internal/nuxt-robots/*": [
+        "../node_modules/@nuxtjs/robots/dist/runtime/server/composables/*"
       ]
     },
     "lib": [
@@ -134,10 +167,12 @@
     "../node_modules/nuxt-phosphor-icons/runtime/server",
     "../node_modules/nuxt-mail/runtime/server",
     "../node_modules/@nuxtjs/google-fonts/runtime/server",
+    "../node_modules/@nuxtjs/robots/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./module/nuxt-site-config.d.ts",
     "./module/@nuxtjs-sitemap.d.ts",
+    "./module/nuxt-robots.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"

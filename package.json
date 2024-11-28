@@ -14,6 +14,7 @@
     "@headlessui/vue": "^1.7.22",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/robots": "^5.0.0",
     "@nuxtjs/sitemap": "^5.3.2",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",

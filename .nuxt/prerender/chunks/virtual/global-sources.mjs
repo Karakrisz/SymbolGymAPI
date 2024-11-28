@@ -90,49 +90,49 @@ const sources = [
                 "loc": "/szolgaltatasok"
             },
             {
-                "loc": "/eroemeles"
-            },
-            {
-                "loc": "/kapcsolat"
-            },
-            {
-                "loc": "/coreerosites"
-            },
-            {
-                "loc": "/szemelyesedzesterv"
+                "loc": "/kettlebell"
             },
             {
                 "loc": "/testsulygyakorlatok"
             },
             {
-                "loc": "/kettlebell"
-            },
-            {
-                "loc": "/ergometergyakorlatok"
+                "loc": "/kapcsolat"
             },
             {
                 "loc": "/gyerekedzesek"
             },
             {
-                "loc": "/mobilizacio"
+                "loc": "/eroemeles"
+            },
+            {
+                "loc": "/szemelyesedzesterv"
+            },
+            {
+                "loc": "/ergometergyakorlatok"
             },
             {
                 "loc": "/adatvedelmi-tajekoztato"
             },
             {
-                "loc": "/galeria"
+                "loc": "/mobilizacio"
+            },
+            {
+                "loc": "/coreerosites"
             },
             {
                 "loc": "/posts/edzoterem-oroshaza-formaba-lendulni-kozossegben-konnyebb"
             },
             {
-                "loc": "/szemelyreszabottetrend"
+                "loc": "/posts/szemelyi-edzes-oroshaza-egyeni-celokhoz-igazitott-profi-tamogatas"
+            },
+            {
+                "loc": "/galeria"
             },
             {
                 "loc": "/posts/crossfit-oroshaza-ero-allokepesseg-es-kozosseg-egy-helyen"
             },
             {
-                "loc": "/posts/szemelyi-edzes-oroshaza-egyeni-celokhoz-igazitott-profi-tamogatas"
+                "loc": "/szemelyreszabottetrend"
             },
             {
                 "loc": "/posts"
@@ -141,13 +141,13 @@ const sources = [
                 "loc": "/posts/adatvedelmi-tajekoztato"
             },
             {
-                "loc": "/posts/funkcionalis-edzes-oroshazan-ero-es-allokepesseg-fejlesztes-a-symbol-gym-edzotermeben"
-            },
-            {
                 "loc": "/posts/fitt-es-egeszseges-eletmod-oroshazan-fejleszd-erodet-es-allokepessegedet-a-symbol-gymben"
             },
             {
                 "loc": "/posts/ero-allokepesseg-fejlesztes-oroshazan-eletmod-es-edzes-lehetosegek-a-symbol-gym-edzotermeben"
+            },
+            {
+                "loc": "/posts/funkcionalis-edzes-oroshazan-ero-es-allokepesseg-fejlesztes-a-symbol-gym-edzotermeben"
             }
         ],
         "sourceType": "app"

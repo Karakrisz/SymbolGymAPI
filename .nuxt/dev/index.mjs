@@ -341,7 +341,7 @@ const _inlineRuntimeConfig = {
         "headers": {
           "Content-Type": "text/xml; charset=UTF-8",
           "Cache-Control": "public, max-age=600, must-revalidate",
-          "X-Sitemap-Prerendered": "2024-11-28T18:48:02.210Z"
+          "X-Sitemap-Prerendered": "2025-01-26T09:45:11.591Z"
         }
       },
       "/_nuxt/builds/meta/**": {
@@ -448,7 +448,6 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
-      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "header": true,
@@ -3012,7 +3011,6 @@ const sitemap = defineSitemapEventHandler(async (e) => {
     return posts.map((post) => {
       return {
         loc: `/posts/${post.slug}`,
-        // Használjuk a modifiedAt-et, vagy fallback a created_at mezőre
         lastmod: post.modifiedAt ? new Date(post.modifiedAt).toISOString() : new Date(post.created_at).toISOString()
       };
     });

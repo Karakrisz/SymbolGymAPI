@@ -117,10 +117,7 @@
         "../node_modules/@nuxtjs/sitemap/dist/runtime/types"
       ],
       "#mail": [
-        "./nuxt-mail"
-      ],
-      "#mail/*": [
-        "./nuxt-mail/*"
+        "./file:/Applications/XAMPP/xamppfiles/htdocs/SymbolGymAPI/.nuxt/nuxt-mail"
       ],
       "#robots": [
         "../node_modules/@nuxtjs/robots/dist/runtime"

@@ -2,7 +2,7 @@ interface Post {
   id: number
   slug: string
   modifiedAt?: string
-  created_at: string // Ez a mező most kötelező
+  created_at: string 
 }
 
 export default defineSitemapEventHandler(async (e) => {
@@ -18,7 +18,6 @@ export default defineSitemapEventHandler(async (e) => {
     return posts.map((post: Post) => {
       return {
         loc: `/posts/${post.slug}`,
-        // Használjuk a modifiedAt-et, vagy fallback a created_at mezőre
         lastmod: post.modifiedAt 
           ? new Date(post.modifiedAt).toISOString() 
           : new Date(post.created_at).toISOString(),
